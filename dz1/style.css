@@ -1,0 +1,34 @@
+label{
+margin-left: 30px;
+}
+
+
+.definition{
+    margin-left: 20px;
+}
+
+.block{
+    display: flex;
+}
+
+.the_survey{
+    margin-left: 35%;
+}
+
+.years_and_gender{
+    display: flex;
+}
+
+.definition p{
+    font-size: 22px;
+}
+
+.zodiac_sign{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+.video{
+    margin-top: 50px;
+}
