@@ -8,7 +8,10 @@ body{
 header{
     background-color: #1f1e1d;
 }
-
+/*
+    По БЭМу нельзя использовать кроме классов.  text-decoration: none; в принципе можно оставить, но для кастомизации (цвет, размер шрифта) нужно создать класс (например Link) и уже его использовать везде где нужно.
+    Тоже самое справедливо и для других мест
+    */
 a{
     text-decoration: none;
     font-size: 18px;
@@ -17,6 +20,16 @@ a{
 
 
 .header-navigation{
+    /*
+     1. БЭМ блоку нельзя задавать внешнюю геометрию, отступы, способ позиционирования и тп.
+     Суть блока в том, что если его скопипастить в любое другое место, он встанет и не сломает вёрстку.
+     В данном  же случае, если его вставить куда-нибудь он добавит еще и отступ в 200px слева, что сломает вёрстку.
+     Вместо этого, надо создать БЭМ элемент в том месте где у тебя этот класс находится и уже ему задавать отступ.
+
+     2. Вёрстка реализована неправильно. Выравнивание должно достигаться не за счёт фиксированных отступов, а автоматически, в зависимости от контента и тп.
+     Для этого и нужны флексы и гриды.
+      */
+
     margin-left: 200px;
     color: white;
     margin-top: 35px;
@@ -41,7 +54,7 @@ a{
     display: inline-block;
     margin-left: 550px;
 }
-
+/* Разочарован увидев id, учитывая что я много раз повторял, что для БЭМа используются только классы.*/
 #header-navigation-search {
     width: 70px;
     height: 20px;
@@ -103,7 +116,7 @@ a{
     border-radius: 20px;
     padding-left: 30px;
     background-color: #1f1e1d;
-    border: 1px solid whitesmoke;
+    border: 1px solid whitesmoke; /* Перезаписывается свойство в 110 строке*/
 }
 
 .main-page-navigation-scrollable-container {
@@ -112,7 +125,7 @@ a{
     overflow: auto;
     overflow-x: hidden;
     display: block;
-    display: inline-block;
+    display: inline-block;/* Перезаписывается свойство в 124 строке. Нужно пофиксить во всех местах где такое есть.*/
 }
 
 .main-page-navigation-scrollable-content {
@@ -120,6 +133,7 @@ a{
     display: block;
 }
 
+/* Использования композиции селекторов в БЭМе так же запрещено.*/
 .main-page-navigation-scrollable-content a{
    padding-top: 10px;
    padding-bottom: 10px;
