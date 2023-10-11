@@ -1,0 +1,51 @@
+
+.images{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 1050px;
+}
+
+
+.definition{
+    margin-left: 20px;
+}
+
+.block{
+    display: flex;
+}
+
+.the_survey{
+    margin-left: 35%;
+}
+
+.years_and_gender{
+    display: flex;
+}
+
+.years_and_gender select{
+    width: 50px;
+    height: 30px;
+}
+
+.definition p{
+    font-size: 22px;
+}
+
+.zodiac_sign{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+.music{
+   float: right;
+}
+
+.video{
+    margin-top: 250px;
+    float: right;
+}
+
+
+
+
