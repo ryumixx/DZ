@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    background-color: rgb(37, 35, 35);
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.search{
+    border-radius: 15px;
+    width: 65px;
+    border: none;
+    height: 28px;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    padding-left: 5px;
+    color: white;
+}
+
+
+.page-navigation__body{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px 15px 200px;
+    background-color: rgb(37, 35, 35);
+    border-top:1px solid whitesmoke;
+}
+
+
+.page-navigation__logo{
+    font-size: 18px;
+}
+
+.page-navigation__main{
+    margin-left: 2%;
+}
+
+.page-navigation__link{
+    padding: 0px 10px 0px 10px;
+}
+
+.page-navigation__search{
+    margin-left: 25%;
+}
+.page-navigation__authorization{
+    margin-left: 0.8%;
+}
+
+.page-navigation__authorization_button{
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin-left: 10px;
+    background-color: white;
+    
+}
+
+.page-linkatthistime{
+
+}
+.page-breadcrumb__body{
+    background-color: gray;
+    padding-left: 200px;
+    border-top:1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.page-breadcrumb__list{
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+}
+
+.page-breadcrumb__list li{
+    display: inline
+    
+}
+
+.page-main-wrapper__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.page-main-wrapper-sidebar__innernav{
+    padding-top: 0.5%;
+
+}
+
+.page-main-wrapper-sidebar__filter{
+ margin-left: 200px;
+}
+
+.page-main-wrapper-sidebar__main{
+    overflow-y: scroll;
+    width: 350px;
+    height: 845px;
+    margin-left: 165px;
+
+}
+
+.page-main-wrapper-sidebar__main li{
+    color: whitesmoke;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page-main-wrapper-sidebar__main_strong{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.page-main-wrapper-content__text{
+    margin-left: 50px;
+    color: white;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.page-main-wrapper-content__text p{
+    font-size: 20px;
+}
+
+.page-main-wrapper-document-toc-container__link{
+    color: white;
+    border-left: 1px solid whitesmoke;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.page-main-wrapper-document-toc-container__link li{
+    list-style: none;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.page-main-wrapper-document-toc-container__link_header{
+    padding-left: 35px;
+}
+
+
+
