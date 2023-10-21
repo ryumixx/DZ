@@ -7,39 +7,39 @@
     <title>dz2-remastered</title>
 </head>
 <body>
-    <div class="page">
-        <div class="page-navigation">
-            <div class="page-navigation__body">
-                <div class="page-navigation__logo">
-                    <a href="" class="link">mdn web docs_</a>
-                </div>
-                <div class="page-navigation__main">
-                    <a href="#" class="page-navigation__link link">References</a>
-                    <a href="#" class="page-navigation__link link">Guides</a>
-                    <a href="#" class="page-navigation__link link">Plus</a>
-                    <a href="#" class="page-navigation__link link">Blog</a>
-                    <a href="#" class="page-navigation__link link">Play</a>
-                    <a href="#" class="page-navigation__link link">AI Help</a>
-                </div>
-                <div class="page-navigation__search">
-                    <input type="search" class="search">
-                </div>
-                <div class="page-navigation__authorization">
-                    <a href="" class="link">Log In</a>
-                    <button class="page-navigation__authorization_button">Sign up for free</button>
-                </div>
-            </div>      
-        </div>
-        <div class="page-breadcrumb">
-            <div class="page-breadcrumb__body">
-                <ul class="page-breadcrumb__list">
-                    <li class="link">References ></li>
-                    <li class="link">HTML</li>
-                </ul>
+<div class="page">
+    <div class="page-navigation"> <!-- Это не совсем навигация, больше похоже на header-->
+        <div class="page-navigation__body">
+            <div class="page-navigation__logo"> <!-- Тут с точки зрения БЭМа всё правильно в принципе-->
+                <a href="" class="link">mdn web docs_</a>
             </div>
-        </div> 
-        <div class="page-main-wrapper">
-            <div class="page-main-wrapper__container">
+            <div class="page-navigation__main">
+                <a href="#" class="page-navigation__link link">References</a>
+                <a href="#" class="page-navigation__link link">Guides</a>
+                <a href="#" class="page-navigation__link link">Plus</a>
+                <a href="#" class="page-navigation__link link">Blog</a>
+                <a href="#" class="page-navigation__link link">Play</a>
+                <a href="#" class="page-navigation__link link">AI Help</a>
+            </div>
+            <div class="page-navigation__search"> <!-- Тут в принципе можно обойтись без этого div'a и использовать только input-->
+                <input type="search" class="search">
+            </div>
+            <div class="page-navigation__authorization">
+                <a href="" class="link">Log In</a>
+                <button class="page-navigation__authorization_button">Sign up for free</button>
+            </div>
+        </div>
+    </div>
+    <div class="page-breadcrumb"> <!-- Вот тут хорошо бэм использован. Вот только page-breadcrumb__body тут лишнее вроде как, можно огранчится только ul -->
+        <div class="page-breadcrumb__body">
+            <ul class="page-breadcrumb__list">
+                <li class="link">References ></li>
+                <li class="link">HTML</li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-main-wrapper">  <!-- Можно не дублировать название родительского блока в дочернем. Достаточно просто main-wrapper, аналогично и в других местах-->
+        <div class="page-main-wrapper__container">
             <div class="page-main-wrapper-sidebar">
                 <div class="page-main-wrapper-sidebar__innernav">
                     <div class="page-main-wrapper-sidebar__filter">
@@ -47,6 +47,7 @@
                 </div>
                 <div class="page-main-wrapper-sidebar__main">
                     <ul>
+                        <!-- У тебя сделан 1 большой список ссылок, но на деле же там 4 раздельных блока (это можно понять по тому, что они визуально разделены) -->
                         <li class="page-main-wrapper-sidebar__main_strong">HTML</li>
                         <li>Tutorials</li>
                         <li>HTML basics</li>
@@ -224,9 +225,9 @@
             </div>
         </div>
     </div>
+    <!-- Забыл футер-->
+</div>
 
-    </div>
 
-    
 </body>
 </html>
